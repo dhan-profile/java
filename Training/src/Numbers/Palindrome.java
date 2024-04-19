@@ -8,9 +8,9 @@ public class Palindrome {
 		String s = sc.nextLine();
 		char[] ch = s.toCharArray();
 		int full = s.length()-1;
-		int len = s.length()/2;
+		int Mid = s.length()/2;
 		boolean res = true;
-		for(int i=0; i<len; i++) {
+		for(int i=0; i<Mid; i++) {
             int j = full - i;
             if (ch[i] != ch[j]) {
             	res = false;
