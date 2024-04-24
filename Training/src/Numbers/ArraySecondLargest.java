@@ -1,6 +1,6 @@
 package Numbers;
 import java.util.Scanner;
-public class SecondLargest {
+public class ArraySecondLargest {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);

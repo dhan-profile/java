@@ -3,7 +3,7 @@ package Numbers;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CommonElements {
+public class ArrayIntersection {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class CommonElements {
 		 }
 		 Arrays.sort(arr1);
 		 Arrays.sort(arr2);
-		 System.out.println("The common elements are: ");
+		 System.out.println("The intersected array elements are: ");
 
 	        i = 0;
 	        do {
