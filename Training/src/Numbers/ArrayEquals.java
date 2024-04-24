@@ -19,8 +19,24 @@ public class ArrayEquals {
 			 arr2[i] = s.nextInt();
 			 i++;
 		 }
-		 Arrays.sort(arr1);
-		 Arrays.sort(arr2);
+	        for (i = 0; i < n - 1; i++) {
+	            for (int j = 0; j < n - i - 1; j++) {
+	                if (arr1[j] > arr1[j + 1]) {
+	                    int temp = arr1[j]; 
+	                    arr1[j] = arr1[j + 1]; 
+	                    arr1[j + 1] = temp; 
+	                }
+	            }
+	        }
+	        for (i = 0; i < n - 1; i++) {
+	            for (int j = 0; j < n - i - 1; j++) {
+	                if (arr2[j] > arr2[j + 1]) {
+	                    int temp = arr2[j]; 
+	                    arr2[j] = arr2[j + 1]; 
+	                    arr2[j + 1] = temp; 
+	                }
+	            }
+	        }
 	        for (i = 0; i < n; i++) {
 	            if (arr1[i] != arr2[i]) {
 	                equal = false;
