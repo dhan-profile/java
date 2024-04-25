@@ -31,7 +31,6 @@ public class NumberOfAlphabets {
 			System.out.print(count1[i] + " ");
 			a++;
         }
-		System.out.println();
 		for(int i = 0; i < 26; i++) {
 			System.out.print(A + ": ");
 			System.out.print(count2[i] + " ");
