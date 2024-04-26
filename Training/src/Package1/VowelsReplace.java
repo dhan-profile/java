@@ -6,6 +6,7 @@ public class VowelsReplace {
 		
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter the string: ");
+		
 		String s1 = s.nextLine();
 		char[] c1 = s1.toCharArray();
 		
