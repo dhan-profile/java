@@ -43,7 +43,7 @@ public class StringManipulation {
 		System.out.println(s9.contains(s10));
 		
 		String text = new String("Hello, My name is Sachin");
-		String[] s = text.split(" ", 4);
+		String[] s = text.split(" ", 6);
 		System.out.println(Arrays.toString(s));
 	}
 
