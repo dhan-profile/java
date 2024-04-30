@@ -1,5 +1,5 @@
 package Package2;
-
+import java.lang.Cloneable;
 public class EmployeeObj1 {
 
 	private int Emp_no;
