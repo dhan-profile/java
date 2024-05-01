@@ -10,15 +10,15 @@ public class Remove1 {
 		String s1 = s.nextLine();
 		int count = 0;
 		char ch[] = s1.toCharArray();
-		for(int i=0; i<s1.length()-1; i++) {
-			for(int j=i+1; j<s1.length(); j++)
-			if(ch[i] == ch[j]) {
-				ch[j] = ' ';
-				ch[i] = ' ';
-			}
+		for (int i = 0; i < s1.length() - 1; i++) {
+			for (int j = i + 1; j < s1.length(); j++)
+				if (ch[i] == ch[j]) {
+					ch[j] = ' ';
+					ch[i] = ' ';
+				}
 		}
-        String s2 = new String(ch).replaceAll(" ", "");
-        System.out.println(s2);
+		String s2 = new String(ch).replaceAll(" ", "");
+		System.out.println(s2);
 	}
 
 }
