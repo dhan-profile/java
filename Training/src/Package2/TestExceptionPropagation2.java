@@ -23,11 +23,9 @@ class TestExceptionPropagation2 {
 		try {
 			TestExceptionPropagation2 obj = new TestExceptionPropagation2();
 			obj.p();
-
 		} catch (Exception e) {
 			System.out.println("Exception handled");
 		}
 		System.out.println("normal flow");
-
 	}
 }

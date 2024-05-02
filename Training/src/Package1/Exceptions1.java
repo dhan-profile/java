@@ -21,6 +21,9 @@ import java.util.Scanner;
 				catch(OutOfRangeException r) {
 					System.out.println(r);
 				}
+				finally {
+					System.out.println("Enter values below 100");
+				}
 			}
 	}
 }
