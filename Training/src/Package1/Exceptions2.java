@@ -12,7 +12,7 @@ public class Exceptions2 {
 		int num1 = s.nextInt();
 		int num2 = s.nextInt();
 		try {
-			FileReader file1 = new FileReader("C:/Users/Public/Documents/example.txt");
+			FileReader file1 = new FileReader("C:/UsersPublic/Documents/example.txt");
 			int divide = num1/num2;
 		} catch (FileNotFoundException e) {
 			System.out.println(e);
