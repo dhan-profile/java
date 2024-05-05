@@ -1,0 +1,48 @@
+package Practice;
+
+import java.util.Scanner;
+
+public class DistinctTriples {
+
+	public static void main(String[] args) {
+		// Write a Java program to find all the distinct triplets 
+		// such that the sum of all the three elements 
+		// [x, y, z (x ≤ y ≤ z)] equal to a specified number.
+		// Sample array: [1, -2, 0, 5, -1, -4]
+		// Target value: 2.
+		Scanner s = new Scanner(System.in);
+		int[] arr = new int[6];
+		System.out.println("Enter 6 numbers: ");
+		for(int i=0; i<6; i++) {
+			arr[i] = s.nextInt();
+		}
+		System.out.println("Enter the Target value: ");
+		int target = s.nextInt();
+		
+		//sort in ascending order
+		for(int i=0; i<6-1; i++) {
+			for(int j=0; j<6-i-1; j++) {
+				if(arr[j] > arr[j+1]) {
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+
+		//triplet
+		int[] t1 = new int[3];
+		for(int i=1;i<4; i++) {
+			int left = i-1;
+			int right = i+1;
+			if(arr[left] + arr[i] + arr[right] == target){
+				System.out.println("Triplet found: ");
+				System.out.println(arr[left] + " " + arr[i] + " " + arr[right]);
+			}
+		}
+		if(i>=4)
+		System.out.println("Triplet not found");
+
+	}
+
+}
