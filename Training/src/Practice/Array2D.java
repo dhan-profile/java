@@ -32,7 +32,7 @@ public class Array2D {
         });
         ArrayList<Integer> count=new ArrayList<Integer>();
         //column size 6 and row size 6 
-        for(int column=0;column<4;column++){  
+        for(int column=0;column<4;column++){
             for (int row =0;row<4;row++){
                 int tempcount=rows.get(row).get(column)+rows.get(row).get(column+1)+rows.get(row).get(column+2);
                 tempcount+=rows.get(row+1).get(column+1);
