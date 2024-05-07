@@ -20,14 +20,16 @@ public class Threads1 extends Thread{
 		t2.start();
 		t3.start();
 		t3.setPriority(8);
-		t1.getName();
+		t1.setDaemon(true);
+//		t1.getName();
+//		t1.getState();
 		System.out.println(t2.getPriority());
 		
 	}
 	
 	public void run(){
 		int i = 0;
-		System.out.println("Started");
+//		System.out.println("Started");
 		while(i<5) {
 			try {
 				Thread.sleep(1000);
@@ -38,6 +40,7 @@ public class Threads1 extends Thread{
 		i++;
 		}
 		System.out.println();
+		System.out.println(Thread.currentThread());
 		
 	}
 }
