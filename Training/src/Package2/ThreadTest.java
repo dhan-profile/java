@@ -1,3 +1,5 @@
+package Package2;
+
 class MyThread extends Thread {
     public MyThread(String name) {
         this.setName(name);

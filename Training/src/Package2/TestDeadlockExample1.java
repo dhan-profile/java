@@ -1,10 +1,10 @@
 package Package2;
 
-class Mythread extends Thread
+class Mythread1 extends Thread
 {  
 String resource1, resource2;
 
-Mythread(String resource1, String resource2){
+Mythread1(String resource1, String resource2){
    this.resource1 = resource1;
    this.resource2 = resource2;
 }
@@ -50,7 +50,7 @@ public void run() {
     final String resource2 = "vimal jaiswal";  
     // t1 tries to lock resource1 then resource2  
         
-    Mythread t1 = new Mythread(resource1, resource2); 
+    Mythread1 t1 = new Mythread1(resource1, resource2); 
   
     // t2 tries to lock resource2 then resource1  
     Mythread21 t2 = new Mythread21(resource1, resource2); 

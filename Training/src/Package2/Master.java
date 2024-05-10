@@ -1,3 +1,5 @@
+package Package2;
+
 class Worker extends Thread {
     @Override
     public void run() {
