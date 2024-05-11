@@ -68,6 +68,9 @@ class Constant<T>{
 
 
 class Addition{
+	Addition(){
+		
+	}
 	private int add;
 	public Addition(int add) {
 		super();
