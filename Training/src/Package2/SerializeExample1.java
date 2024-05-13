@@ -17,10 +17,9 @@ class Employee implements Serializable{
 public class SerializeExample1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		try {
 		Employee obj1 = new Employee(1, "dhanush");
-		FileOutputStream obj = new FileOutputStream("C:/Public/f1.txt");
+		FileOutputStream obj = new FileOutputStream("C:/Public/f1.xlsx");
 		ObjectOutputStream out = new ObjectOutputStream(obj);
 		out.writeObject(obj1);
 		out.flush();

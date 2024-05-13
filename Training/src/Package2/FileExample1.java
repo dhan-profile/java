@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class FileExample1 {
 
 	public static void main(String[] args) {
-		File f = new File("C:/Public/Test1.txt");
+		File f = new File("C:/Public/Test1.xlsx");
 		File f1 = new File("C:/Public");
 		String[] arr1 = f1.list();
 		try {
