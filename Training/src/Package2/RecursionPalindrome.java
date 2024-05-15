@@ -15,10 +15,13 @@ public class RecursionPalindrome {
 
 	private static boolean palindrome(String str) {
 		int length = str.length();
-		for(int i=0; i<length/2; i++, length--) {
-			if(str.charAt(length-1) != str.charAt(i)) {
-				return false;
-			}
+		int i = 0;
+		if(length/2 > i) {
+			if(str.charAt(length-1) != str.charAt(i))
+			return false;
+		} else {
+			i++; length--;
+			palindrome(str);
 		}
 		return true;
 	}

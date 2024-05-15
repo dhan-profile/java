@@ -26,6 +26,7 @@ public class TransientKeyEx1 implements Serializable{
 			
 			System.out.println("n1= "+ t2.n1);
 			System.out.println("n2= " + t2.n2);
+			//	converts/assign to default value of variable type 
 			
 		} catch (FileNotFoundException e) {
 			System.out.println(e);

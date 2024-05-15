@@ -32,8 +32,12 @@ class Bike {
 		Bike obj1 = new Bike();
 		Honda obj2 = new Honda();
 		Hero obj3 = new Hero();
+//		Bike b1 = new Honda();
+		Bike b1 = (Bike)new Honda();
+//		Honda h1 = (Honda)obj1;
 		obj1.show();
 		obj2.show();
 		obj3.show();
+		b1.show();
 	}
 }
