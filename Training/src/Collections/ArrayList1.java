@@ -2,9 +2,39 @@ package Collections;
 
 import java.util.ArrayList;
 
-public class ArrayList1 {
+interface List1{
+	void display();
+}
+
+class Parent{
+	public void viewParent() {
+		System.out.println("Parent Class Method");
+	}
+}
+
+class Child extends Parent{
+	public void viewChild() {
+		System.out.println("Child Class Method");
+	}
+}
+public class ArrayList1 implements List1{
+	
+	ArrayList1(){
+		System.out.println("Constructor block");
+	}
+	
+	static {
+	System.out.println("Static Block");	
+	}
+	
+	public void display(){
+		System.out.println("Interface Method - Abstract");
+	}
 
 	public static void main(String[] args) {
+		ArrayList1 inObj = new ArrayList1();
+		inObj.display();
+		ArrayList1 obj = new ArrayList1();
 		ArrayList<Integer> arr = new ArrayList<>();
 		arr.add(10);
 		arr.add(20);
@@ -48,6 +78,22 @@ public class ArrayList1 {
 		System.out.println("al2.remove(\"4\") : " + al2);
 		System.out.println(al2.indexOf("Pear"));
 		System.out.println(al2.lastIndexOf("Pear"));
+		
+		ArrayList<Object> arrObj = new ArrayList<>();
+		arrObj.add("Strings");
+		arrObj.add(2);
+		arrObj.add(3);
+		arrObj.add(4.5);
+		arrObj.add(2.07f);
+		arrObj.add(true);
+		System.out.println(arrObj);
+		
+		Parent p = new Child();
+		Child c = (Child)p;
+		p.viewParent();
+		c.viewParent();
+		c.viewChild();
+		
 	}
 
 }

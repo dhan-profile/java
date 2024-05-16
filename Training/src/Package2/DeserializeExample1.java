@@ -14,6 +14,7 @@ public class DeserializeExample1 {
 				Employee emp=(Employee)obj.readObject();
 				System.out.println(emp.no +" "+ emp.name);
 			}
+			//converting byte stream to object
 			obj.close();
 			System.out.println("Completed");
 		} catch(Exception e) {

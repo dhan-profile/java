@@ -2,6 +2,11 @@ package Package2;
 
 public class ArrayEg {
 
+	static int a;
+	final int b = 0;
+	transient int c = 0;
+	volatile int d = 0;
+		
 	public static void main(String[] args) {
 	        int a[]= new int[5];
 	        a[0]= 10;
@@ -47,8 +52,20 @@ public class ArrayEg {
 	                    sum += arr[i];
 	                    //sum = sum + arr[i];//165
 	                }
-	                System.out.println(sum);
+	                System.out.println("Sum is: " + sum);
 
+	                int[] arrCopy = new int[arr.length];
+	                // Copy Array ===============================
+	                System.arraycopy(arr, 2, arrCopy, 0, 5);
+	                for (int i = 0; i < arrCopy.length; i++) {
+						System.out.print(arrCopy[i] + " ");
+					}
+	                System.out.println();
+	                // Clone Array ===================================
+	                int[] arrClone = arrCopy.clone();
+	                for(int i : arrClone) {
+	                	System.out.print(i + " ");
+	                }
 	    }
 	    
 	}

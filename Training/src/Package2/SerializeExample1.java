@@ -22,6 +22,7 @@ public class SerializeExample1 {
 		FileOutputStream obj = new FileOutputStream("C:/Public/f1.xlsx");
 		ObjectOutputStream out = new ObjectOutputStream(obj);
 		out.writeObject(obj1);
+		// Converting object to byte stream
 		out.flush();
 		out.close();
 		System.out.println("Successful");
