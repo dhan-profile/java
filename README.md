@@ -45,12 +45,15 @@ Behaviors (methods)
 - ■ It should start with lowercase and should be a verb.
 
 **Class creation Syntax:**
+```
 class Class_Name{
 
 }
-
+```
 **Object creation Syntax:**
+```
 <code>Class_Name Object = new Class_Name();</code>
+```
 
 **Java Compilation?**
 Javac stands for Java Compiler. After compilation it will create a class file in the same folder. These class files are nothing but the bytecodes.
@@ -127,12 +130,14 @@ ObjectName.variable;
 Class variables are created and stored in class itself. Their values are applied to the class and all of its instances. 
 
 Class variable is created by using the static keyword before the variable.
-Eg: <code>class FamilyMember {
+Eg: 
+```
+class FamilyMember {
 static string surname = “Johnson”;
 String name;
 Int age;
-}</code>
-
+}
+```
 
 **Reference to objects**
 When we assign objects to variables, or pass objects as arguments to methods, you are passing references to those objects, not the objects themselves or copies of objects. 
@@ -159,22 +164,24 @@ Object of one class can be cast into an object of another class. For this the cl
 **Syntax:**
 (classname) object
 **Eg:**
-<code>GreenApple a;
+```
+GreenApple a;
 Apple a2;
 a = new GreenApple();
-a2 = (Apple) a;</code>
+a2 = (Apple) a;
+```
 Objects can also be cast to interfaces, but the interface has to be implemented from its class or superclass.
 
 
 **Converting primitive types to Objects and vice versa**
 java.lang package includes several special classes that correspond to each primitive data type. Integer for int type, Float for float type, etc.,
 Eg:
-<code>Integer intObject = new Integer(35);	
+```
+Integer intObject = new Integer(35);	
 //converts value(primitive) into object
 To convert objects back to primitive:
-int theInt = intObject.intValue();	// returns 35</code>
-
-
+int theInt = intObject.intValue();	// returns 35
+```
 
 - **Java Class Libraries**
 - java.lang 
@@ -214,7 +221,10 @@ When you create an array object using new, all its elements are initialized for 
 
 
 Instead of using new to create the new array object, enclose the elements of the array inside braces, separated by commas:
-Eg: String[ ] chiles = { “jalapeno”, “anaheim”, “serrano,”  “habanero,” “thai” };
+Eg: 
+```
+String[ ] chiles = { “jalapeno”, “anaheim”, “serrano,”  “habanero,” “thai” };
+```
 
 **Multidimensional Arrays**
 Java does not support multidimensional arrays. Instead we can use an array of arrays.
@@ -243,23 +253,29 @@ default: statement;
 **For loop**
 It is used to execute a block of statements repeatedly for a certain number of times.
 syntax:
-<code>for(initial_value; test_condition; increment) {
+```
+for(initial_value; test_condition; increment) {
 statement;
-}</code>
+}
+```
 
 **While loop**
 The while loop is used to repeat a statement or block of statements as long as the condition is true.
 Syntax:
-<code>while (condition) {
+```
+while (condition) {
  bodyOfLoop;
-}</code>
+}
+```
 
 **Dowhile loop**
 while loops test the condition before looping,making it possible that the body of the loop will never execute if the condition is false the first time it’s tested.
 syntax:
-<code>do {
+```
+do {
  bodyOfLoop;
-} while (condition)</code>
+} while (condition)
+```
 
 **Constants**
 Constants are useful for setting global states in a method or object, or for giving meaningful
@@ -273,14 +289,18 @@ Eg: <code>final int val = 0;      //constant variable ‘val’</code>
 
 **Defining Methods**
 **Syntax:**
-<code>return_type method_name (type1 arg1, type2 arg2) {
+```
+return_type method_name (type1 arg1, type2 arg2) {
 …………..
 …………..
-}</code>
+}
+```
 
 For a method that is returning an array object, use square brackets after the type.
 **Syntax:**
-<code>int[ ] makeRange(int upper, int lower) { …. }</code>
+```
+int[ ] makeRange(int upper, int lower) { …. }
+```
 
 **this keyword**
 this refers to the current object, and you can use it anywhere that object might appear - in dot notation to refer to the object’s instance variables, as an argument to a method, as the return value for the current method, and so on.
@@ -288,16 +308,18 @@ this refers to the current object, and you can use it anywhere that object might
 ■ this can be used inside any method to refer to the current object.
 
 Eg: this.x;
-<code>this.myMethod(this);
+```
+this.myMethod(this);
 ……..
-return this;</code>
+return this;
+```
 
 Eg: 
-<code>class A{
+```
+class A{
 void m() { System.out.println(“Hello m”); }
 void n();
 System.out.println(“hello n”);
-
 this.m();
 }
 }
@@ -308,7 +330,8 @@ A a = new A();
 a.n();
 }
 }
-</code>
+```
+
 this keyword is used;
 - To access the instance variables and methods of the current object.
 - To invoke the current class constructor using this() or this(args).
@@ -322,7 +345,9 @@ Eg: for different types of this. declarations
 
 **Passing arguments to methods**
 Primitive types are passed by value, object/instance of class are passed by reference.
-Eg: <code>class RangeClass {
+Eg: 
+```
+class RangeClass {
 int[] makeRange (int lower, int upper) {
 int arr[] = new int[ (upper - lower) + 1 ];
 for (int i = 0; i < arr.length; i++) {
@@ -354,15 +379,19 @@ System.out.println("]");
     rc.methodTwo();
 }
 }
-</code>
+```
+
 **Variable Scope and method definition**
-Eg: <code>class ScopeTest {
+Eg: 
+```
+class ScopeTest {
  int test = 10;		//instance variable / class variable
  void printTest () {
  int test = 20;		//local variable
  System.out.println(“test = “ + test);		// output will be 20 
  }
-}</code>
+}
+```
 
 The local variable hides the instance variable. To print the value of an instance variable we have to use this.test to refer to the instance variable.
 
@@ -372,10 +401,12 @@ would create a class variable. For example, the max class method might have a si
 Eg: <code>static int max (int arg1, int arg2) { ... }</code>
 
 **The signature for the main() method:**
-<code>public static void main (String args[]) 
+```
+public static void main (String args[]) 
 {
 ……..
-}</code>
+}
+```
 Here’s a run-down of the parts of the main() method:
 - ■ **public** means that this method is available to other classes and objects. The main()
 - method must be declared public.
@@ -393,21 +424,26 @@ initial variables or creating instances of any classes you may have declared.
 
 **Arguments**
 The arguments that we pass in the java program will be stored as an array of strings. To treat them as non-strings we have to convert them into whatever the type we want.
-Eg: <code>for (int i = 0; i < args.length; i++) {
+Eg: 
+```
+for (int i = 0; i < args.length; i++) {
  sum += args[i];
- }</code>
+ }
+ ```
 Here the code will get an error on compilation because sum is of int type and args[i] is of array type. To solve this error we should write as:
-<code>for (int i = 0; i < args.length; i++) {
+```
+for (int i = 0; i < args.length; i++) {
 sum += Integer.parseInt(args[i]);
- }</code>
+ }
+```
 
 **Constructors**
-- ■ Constructors always have the same name as the class.
-- ■ Constructors don’t have a return type.
-- ■ The constructor is executed before the main function in Java. 
-- ■ A constructor is a special method/function that is used to initialize an object. 
-- ■ The constructor is called when an object is created using the new keyword. 
-- ■ A constructor can have parameters, and it can be used to initialize the instance variables of the class.
+■ Constructors always have the same name as the class.
+■ Constructors don’t have a return type.
+■ The constructor is executed before the main function in Java. 
+■ A constructor is a special method/function that is used to initialize an object. 
+■ The constructor is called when an object is created using the new keyword. 
+■ A constructor can have parameters, and it can be used to initialize the instance variables of the class.
 
 **Overriding Constructors**
 Constructors cannot be overloaded technically. But
@@ -415,9 +451,11 @@ Constructors cannot be overloaded technically. But
 **Finalizer Method**
 Finalizer methods are called just before the object is garbage collected and its memory reclaimed. It is the opposite of the constructor method.
 Syntax:
-<code>void finalize() {
+```
+void finalize() {
  ...
-}</code>
+}
+```
 In most cases we don’t need to use finalize.
 
 **Naming Conventions**
@@ -435,7 +473,8 @@ When we want to use some special class defined somewhere then we should use impo
 Eg: import java.lang.*;
 
 **Command Line Input**
-<code>public class Echo
+```
+public class Echo
 {
 public static void main(String args[]) 
 { 
@@ -446,10 +485,12 @@ for (int i=0;i<args.length;i++)
 }
 System.exit(0);
 }
-}</code>
+}
+```
 
 Output:
 Numeric Input to Program
+```
 import java.lang.*;
 
 class Calculator{
@@ -464,7 +505,7 @@ a.i= Integer.parseInt(args[0]);
 System.out.println("Square root of "+a.i+" is "+a.x);
 }
 }
-
+```
 Here, Integer.parseInt(args[0]) gets the string input and converts string into integer using Integer.parseInt. 
 
 2) Input with Scanner class
@@ -477,10 +518,12 @@ Create an object for Scanner class.
 Define variables to get input from the keyboard.
 Assign variables to Object_Name.nextInt() to get input. (nextInt for reading one after another)
 Eg: To get char input
+```
 Scanner sc = new Scanner(System.in);
 char ch = sc.next().charAt(0);
-
+```
 (Using Scanner and ArrayList)
+```
 import java.util.*;
 class SimpleArrayList{
 public static void main(String args[])
@@ -500,9 +543,10 @@ sum = sum+l.get(i);	//takes the ith element of array list ‘l’
 avg = sum/(l.size());
 System.out.println("Average : " + avg);
 }}
-
+```
 3) Input using InputStreamReader class
 DataInputStream (depreciated) / BufferedReader & InputStreamReader
+```
 import java.io.*;
 class InterestCalculator
 {
@@ -540,11 +584,12 @@ System.out.printf("Width of 20 characters before decimal = %20.4f\n", interestTo
 }
 catch(Exception ex) { }
 }}
-
+```
 Here, %.4f refers to 4 digits after decimal, \n for new line as we have given printf, which is a formatted print statement, %20.4f refers to 20 characters before decimal and 4 digits after decimal.
 
 Scope Rule
 Class Scope
+```
 import java.util.*;
 class Box{
 	float x = 1;
@@ -577,7 +622,7 @@ public static void main(String args[])	{
 	System.out.println("Circle Area: " + c1.area());
 }
 }
-
+```
 Block Scope
 
 
@@ -591,7 +636,9 @@ It acts like a global variable, that is, there is only one copy of the variable 
 Static Method
 Static methods have the keyword static before the method name.
 We don’t need an object to call a static method.
-Eg: public static class Circle{
+Eg: 
+```
+public static class Circle{
 	float x = 11;
 	float y = 12;
 	float radius = 5;
@@ -617,7 +664,7 @@ public static void main(String args[]) {
 System.out.println("Box class data: " + b1.x);
 System.out.println("Circle class data: " + Circle.area());
 }}
-
+```
 Nested Class
 
 
@@ -626,7 +673,9 @@ Nested Class
 Static Nested class 
 A static nested class is a static member of the outer class. It does not have access to the instance variables / objects of the outer class.
 You can create an instance / object of a static nested class without creating an instance of the outer class.
-Eg: public class Outer {
+Eg: 
+```
+public class Outer {
     static class Nested {
         void display() {
             System.out.println("This is a static nested class.");
@@ -640,10 +689,12 @@ public class Main {
         nestedObj.display();
     }
 }
+```
 we use the dot (.) operator to create instances of inner classes using the outer class.
 
 29-02-2024
 Recursion in Java
+```
 import java.util.*;
 class FactorialRecursive {
 	protected int factorial(int x){
@@ -663,7 +714,7 @@ class FactorialRecursive {
 		System.out.println("The Factorial of " +  userInput + " is " + calculatedValue);
 	}
 }
-
+```
 Output:
 
 
@@ -679,7 +730,9 @@ Method should have the same parameters as the parent class.
 Super Keyword
 The super keyword in Java is a reference variable which is used to refer to immediate parent class members.
 Whenever you create an instance of a subclass, an instance of its parent class is created implicitly, which is referred to by super keyword.
-Eg: class Animal {
+Eg: 
+```
+class Animal {
 String color="white";
 }
 class Dog extends Animal{
@@ -693,11 +746,13 @@ public static void main(String args[]) {
 Dog d = new Dog();
 d.printColor();
 }}
-
+```
 
 super keyword can also be used to call super class methods.
 
-Eg: class Animal {
+Eg: 
+```
+class Animal {
 void eat() {System.out.println("eating...");}
 }
 class Dog extends Animal{
@@ -713,11 +768,14 @@ public static void main(String args([]) {
 Dog d = new Dog();
 d.work();
 }}
+```
 Output:
 
 
 Invoking parent class constructor
-Eg: class Animal {
+Eg: 
+```
+class Animal {
 Animal() {			// here Animal() is a constructor of super class
 System.out.println("animal is created");)
 }
@@ -731,12 +789,14 @@ class TestSuper3{
 public static void main(String args([]) {
 Dog d = new Dog () ;
 }
-
+```
 Dynamic method dispatch / Runtime Polymorphism
 Dynamic method dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time. Also, it is called Runtime polymorphism.
 In this process, an overridden method is called through the reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
 
-Eg: class Bike{
+Eg: 
+```
+class Bike{
 void run() { System.out.println("running") ;}
 }
 class Splendor extends Bike{
@@ -751,6 +811,7 @@ b2.run();
 Bike b3 = new Splendor();	//Up casting
 b3.run();			// subclass method i.e., Splendor will be executed
 }}
+```
 Output:
 
 
@@ -881,18 +942,18 @@ An interface cannot implement another interface or class.
 
 If a class implements more than one interface, the interfaces are separated with commas.
 Methods that implement an interface must be declared public.
-
+```
 Syntax: class DerivedClass_Name implements Interface_Name{ 
 …………….
 …………….
 }
-
-
+```
+```
 Syntax: interface Another_Interface_Name extends Interface_Name{
 ………….
 …………
 }
-
+```
 Most used interfaces in Java
 Iterator (in java.util package)
 Cloneable ()
@@ -913,7 +974,7 @@ Math.pow() takes two parameters and returns the first parameter raised to the po
 
 Day Name Finder Formula:
 
-<code>
+```
  if (month == 1 || month == 2) {
  month += 12;
  year--;
@@ -925,7 +986,7 @@ int K = year % 100;
 int J = year / 100;
 
 int h = (q + (13*(m + 1))/5 + K + K/4 + J/4 + 5*J) % 7;
-</code>
+```
 
 **Interfaces**
 An interface is a completely abstract class that contains only abstract methods.
@@ -1002,6 +1063,7 @@ There are two ways to create a thread.
 Inherit from the Thread class, override its run() method, and write the functionality of the thread in the run() method.
 Then you create a new object of your class and call it's start() method to run the thread.
 Example:
+```
 class Loader extends Thread {
   public void run() {
     System.out.println("Hello");
@@ -1014,10 +1076,11 @@ class MyClass {
     obj.start();
   }
 }
-
+```
 2. By Implementing the Runnable interface
 The other way of creating Threads is implementing the Runnable interface. Implement the run() method. Then, create a new Thread object, pass the Runnable class to its constructor, and start the Thread by calling the start() method.
 Example:
+```
 class Loader implements Runnable {
   public void run() {
     System.out.println("Hello");
@@ -1029,6 +1092,7 @@ class MyClass {
     t.start();
   }
 }
+```
 Implementing the Runnable interface is the preferred way to start a Thread, because it enables you to extend from another class, as well.
 
 
@@ -1059,7 +1123,8 @@ In addition to storing the object, the LinkedList stores the memory address (or 
 HashMap 
 HashMap is used for storing data collections as key and value pairs. One object is used as a key (index) to another object (the value). The put, remove, and get methods are used to add, delete, and access values in the HashMap.
 
-Example:<code>
+Example:
+```
 import java.util.HashMap;
 public class MyClass {
   public static void main(String[ ] args) {
@@ -1069,8 +1134,8 @@ public class MyClass {
     points.put("Rob", 733);
     System.out.println(points.get("Dave")); 
   }
-}</code>
-
+}
+```
 
 A HashMap cannot contain duplicate keys. Adding a new item with a key that already exists overwrites the old element.
 The HashMap class provides containsKey and containsValue methods that determine the presence of a specified key or value.
@@ -1094,7 +1159,8 @@ import java.io.File;
 ...
 File file = new File("C:\\data\\input-file.txt");
 
-Eg:<code>
+Eg:
+```
 import java.io.File;
 public class MyClass {
   public static void main(String[ ] args) {
@@ -1106,14 +1172,16 @@ public class MyClass {
      System.out.println("The file does not exist");
     }
   }
-}</code>
+}
+```
 The getName() method returns the name of the file.
 Note that we used double backslashes in the path, as one backslash should be escaped in the path String.
 
 Reading a file
 The constructor of the Scanner class can take a File object as input. To read the contents of a text file at the path "C:\\sololearn\\test.txt", we would need to create a File object with the corresponding path and pass it to the Scanner object.
 
-Eg:<code>
+Eg:
+```
 try {
   File x = new File("C:\\sololearn\\test.txt");
   Scanner sc = new Scanner(x);      
@@ -1121,7 +1189,7 @@ try {
  catch (FileNotFoundException e) {
 
 }
-</code>
+```
 The Scanner class inherits from the Iterator, so it behaves like one. We can use the Scanner object's next() method to read the file's contents.
 
 It is always good practice to close a file when finished working with it. One way to do this is to use the Scanner's close() method.
