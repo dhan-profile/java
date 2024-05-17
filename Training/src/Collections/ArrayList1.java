@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 interface List1{
 	void display();
@@ -94,6 +95,21 @@ public class ArrayList1 implements List1{
 		c.viewParent();
 		c.viewChild();
 		
+//		Object arr1[] = arrObj.toArray();
+//		String s[] = new String[arrObj.size()];
+//		arrObj.toArray(s);
+//		System.out.println(arr1);
+		
+		ArrayList<String> str = new ArrayList<>();
+		str.add("Hello");
+		str.add("Java");
+		str.add("Programming");
+		str.add("...");
+		
+		Iterator<String> itr = str.iterator();
+		while(itr.hasNext()) {
+			System.out.print(itr.next() + " ");
+		}
 	}
 
 }
