@@ -110,6 +110,9 @@ public class ArrayList1 implements List1{
 		while(itr.hasNext()) {
 			System.out.print(itr.next() + " ");
 		}
+		String sdr = "newstring";
+		String ttr = "newstring";
+		System.out.println(sdr.intern() == ttr.intern());
 	}
 
 }

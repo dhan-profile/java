@@ -1,5 +1,10 @@
 package Package2;
 
+interface Ample{
+	int a = 0;
+}
+
+
 class Base{
 	int n1 = 50;
 	int n2 = 50;
