@@ -22,5 +22,4 @@ public class PalindromeString {
 			System.out.print("NOT A PALINDROME");
 		}
 	}
-
 }
