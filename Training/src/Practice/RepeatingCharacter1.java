@@ -12,40 +12,40 @@ public class RepeatingCharacter1 {
 		findChar(str);
 	}
 	    public static void findChar(String str) {
-	        int[] charCounts = new int[256];
+	        int[] charCounts = new int[128];
 
 	        for (int i = 0; i < str.length(); i++) {
 	            charCounts[str.charAt(i)]++;
 	        }
 
-	        char firstNonRepeatedChar = '\0';
+	        char ch1 = '0';
 	        for (int i = 0; i < str.length(); i++) {
 	            if (charCounts[str.charAt(i)] == 1) {
-	                firstNonRepeatedChar = str.charAt(i);
+	                ch1 = str.charAt(i);
 	                break;
 	            }
 	        }
 
-	        char firstRepeatedChar = '\0';
+	        char ch2 = '0';
 	        for (int i = 0; i < str.length(); i++) {
 	            if (charCounts[str.charAt(i)] > 1) {
-	                firstRepeatedChar = str.charAt(i);
+	                ch2 = str.charAt(i);
 	                break;
 	            }
 	        }
 
-	        if (firstNonRepeatedChar != '\0') {
-	            System.out.println("First non-repeated character: " + firstNonRepeatedChar);
+	        if (ch1 != '\0') {
+	            System.out.println("First non-repeated character: " + ch1);
 	        } else {
 	            System.out.println("No non-repeated character found.");
 	        }
 
-	        if (firstRepeatedChar != '\0') {
-	            System.out.println("First repeated character: " + firstRepeatedChar);
+	        if (ch2 != '\0') {
+	            System.out.println("First repeated character: " + ch2);
 	        } else {
 	            System.out.println("No repeated character found.");
 	        }
 	}
 	
 }
-	
+	//https://stackoverflow.com/questions/77601661/what-is-this-countstr-charati
