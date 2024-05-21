@@ -13,14 +13,14 @@ public class Student implements Comparable<Student>{
 	}
 
 	public int compareTo(Student s) {
-		return Integer.compare(this.no, s.no);
-//		if(this.no == s.no) {
-//			return 0;
-//		} else if(this.no > s.no) {
-//			return 1;
-//		} else {
-//			return -1;
-//		}
+//		return Integer.compare(this.no, s.no);
+		if(this.no == s.no) {
+			return 0;
+		} else if(this.no > s.no) {
+			return 1;
+		} else {
+			return -1;
+		}
 	}
 	
 	public String toString() {
