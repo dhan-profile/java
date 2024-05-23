@@ -21,12 +21,14 @@ public class Vector1 {
 		vec1.addElement(22);
 		vec1.addFirst(34);
 		vec1.addLast(13);
+		System.out.println("vec1 : " + vec1);
 		System.out.println("vec1.remove(0) : " + vec1.remove(0));
 		System.out.println("vec1 : " + vec1);
 		System.out.println("vec1.clone() : " + vec1.clone());
 		if(vec1.contains(22)) 
 			System.out.println("vec1.indexOf(22) : " + vec1.indexOf(22));
 		System.out.println("vec.size() : " + vec.size());
+		System.out.println(vec.hashCode());
 	}
 
 }

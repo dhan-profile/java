@@ -1,4 +1,4 @@
-package Collections;
+package Create;
 
 public class Student implements Comparable<Student>{
 	int no;  

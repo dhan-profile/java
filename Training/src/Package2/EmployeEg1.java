@@ -1,8 +1,6 @@
 package Package2;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 
 public class EmployeEg1 {
 	int no;

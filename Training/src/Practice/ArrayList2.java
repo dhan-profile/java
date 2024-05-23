@@ -54,7 +54,7 @@ public class ArrayList2 {
 		while(itr.hasNext()){
 			System.out.print(itr.next() + " ");
 		}
-		
+					
 		System.out.println("\nEnd");
 	}
 
