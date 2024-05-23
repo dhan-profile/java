@@ -29,6 +29,7 @@ public class Vector1 {
 			System.out.println("vec1.indexOf(22) : " + vec1.indexOf(22));
 		System.out.println("vec.size() : " + vec.size());
 		System.out.println(vec.hashCode());
+		System.out.println(vec.elements());
 	}
 
 }
