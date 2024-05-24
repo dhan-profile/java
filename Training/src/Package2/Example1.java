@@ -12,6 +12,14 @@ class Base{
 	void sum(int n1, int n2) {
 		System.out.println("Base Sum: " + (n1+n2));
 	}
+	
+	private void change() {
+		System.out.println("Parent change");
+	}
+	
+	static void change2() {
+		System.out.println("Parent change2");
+	}
 }
 
 class Derived extends Base{
@@ -19,6 +27,15 @@ class Derived extends Base{
 	void sum(int n1, int n2) {
 		System.out.println("Derived Sum(super) : " + (super.n1+super.n2));
 		System.out.println("Derived sum(this) : " + (this.n1+this.n2));
+		change();
+	}
+	
+	private void change() {
+		System.out.println("child change");
+	}
+	
+	static void change2() {
+		System.out.println("Child change2");
 	}
 }
 
@@ -41,6 +58,7 @@ public class Example1 {
 		b.sum(n1, n2);
 		Derived d = new Derived();
 		d.sum(n1, n2);
+		d.change2();
 	}
 	
 	public static void main(String[] args) {

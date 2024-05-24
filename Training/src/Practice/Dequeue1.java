@@ -1,9 +1,18 @@
 package Practice;
 import java.util.ArrayDeque;
+import java.util.Collections;
+import java.util.Comparator;
+
 public class Dequeue1 {
 
 	public static void main(String[] args) {
-		ArrayDeque<Integer> dq = new ArrayDeque<>();
+		ArrayDeque<Integer> dq = new ArrayDeque<Integer>();
+		
+		// We use ArrayDequeue because we cannot create object for Dequeue
+		// because Dequeue is an interface, ArrayDeque implements Dequeue interface
+		// Queue(Interface) --extends--> Dequeue(Interface) --implements--> ArrayDeque(Class)
+		// ArrayDeque is not suitable for sorting
+		
 		dq.offer(50);
 		dq.offer(40);
 		dq.offer(65);
@@ -23,7 +32,8 @@ public class Dequeue1 {
 		System.out.println("dq.peek() : "+dq.peek());
 		System.out.println("dq.peekFirst() : "+dq.peekFirst());
 		System.out.println("dq.peekLast() : "+dq.peekLast());
-		
+		System.out.println("dq : "+dq);
+//		Collections.sort(dq);
 	}
 
 }
