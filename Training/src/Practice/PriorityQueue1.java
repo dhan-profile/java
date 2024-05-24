@@ -10,8 +10,8 @@ public class PriorityQueue1 {
 		pq.offer(32);
 		pq.add(5);
 		System.out.println("pq : " + pq);
-		System.out.println("pq.offer(50) : "+pq.offer(50));
-		System.out.println("pq.poll() : " + pq.poll());
+		System.out.println("pq.offer(50) : "+pq.offer(50));	// Inserted at End 
+		System.out.println("pq.poll() : " + pq.poll());	// Removed at Beginning
 		System.out.println("pq : " + pq);
 		System.out.println("pq.peek() : "+pq.peek());
 		System.out.println("pq.element() : "+pq.element());
