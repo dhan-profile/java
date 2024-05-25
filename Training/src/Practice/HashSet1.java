@@ -12,6 +12,7 @@ public class HashSet1 {
 		set.add("Two");
 		set.add("Nine");
 		set.add("Four");
+		set.add(null);
 		set.add("Eight");
 		Iterator<String> itr = set.iterator();
 		while(itr.hasNext()) {
