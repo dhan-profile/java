@@ -52,10 +52,9 @@ public class MapInterface1 {
 //		}
 
 		for(Map.Entry<Integer, String>  e : map.entrySet()){
-//			Integer key = e.getKey();
-//			String val = e.getValue();
-//			System.out.println(key + " : " + val);
-			System.out.println(e.getValue()+" : "+e.getKey());
+			Integer key = entry.getKey();
+			String val = entry.getValue();
+			System.out.print(e);
 		}
 	}	
 }

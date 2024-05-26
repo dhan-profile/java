@@ -13,7 +13,7 @@ class EmployeeNew implements Comparable<EmployeeNew>{
 		this.name = name;
 		this.phone = phone;
 	}
-	
+	// Comparable uses compareTo() method
 	public int compareTo(EmployeeNew e) {
 		if(this.no == e.no) {
 			return 0;
@@ -26,6 +26,7 @@ class EmployeeNew implements Comparable<EmployeeNew>{
 	}
 }
 
+// Comparator uses compare() method
 class NameComparator implements Comparator<EmployeeNew>{
 	public int compare(EmployeeNew o1, EmployeeNew o2) {
 		return o1.name.compareTo(o2.name);

@@ -3,6 +3,7 @@ package Create;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 interface List1 {
 	void display();
@@ -88,14 +89,19 @@ public class ArrayList1 implements List1 {
 		System.out.println(al2.lastIndexOf("Pear"));
 
 		ArrayList<Object> arrObj = new ArrayList<>();
-		arrObj.add("Strings");
+		arrObj.add("Hello");
 		arrObj.add(2);
 		arrObj.add(3);
 		arrObj.add(4.5);
 		arrObj.add(2.07f);
 		arrObj.add(true);
-		System.out.println(arrObj);
-
+		System.out.println("arrObj: "+ arrObj);
+		
+		ListIterator<Object> li = arrObj.listIterator();
+		while(li.hasNext()) {
+			System.out.print(li.next() + " ");
+		}
+		
 		Parent p = new Child();
 		Child c = (Child) p;
 		p.viewParent();

@@ -1,5 +1,6 @@
 package Practice;
 
+import java.util.Enumeration;
 import java.util.Vector;
 
 public class Vector1 {
@@ -29,7 +30,12 @@ public class Vector1 {
 			System.out.println("vec1.indexOf(22) : " + vec1.indexOf(22));
 		System.out.println("vec.size() : " + vec.size());
 		System.out.println(vec.hashCode());
-		System.out.println(vec.elements());
+//		System.out.println(vec.elements());
+		
+		Enumeration<Integer> en = vec.elements();
+		while(en.hasMoreElements()) {
+			System.out.print(en.nextElement()+" ");
+		}
 	}
 
 }

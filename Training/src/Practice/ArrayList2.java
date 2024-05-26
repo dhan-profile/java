@@ -3,6 +3,7 @@ package Practice;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class ArrayList2 {
 
@@ -54,6 +55,16 @@ public class ArrayList2 {
 		while(itr.hasNext()){
 			System.out.print(itr.next() + " ");
 		}
+		
+		System.out.println("ListIterator:------");
+		ListIterator<Integer> litr = arr1.listIterator();
+		while(litr.hasNext()) {
+			System.out.println(litr.next() + " " + litr.nextIndex());
+			if(litr.nextIndex() == 5) {
+				litr.set(6);
+			}
+		}
+		System.out.println(arr1);
 					
 		System.out.println("\nEnd");
 	}

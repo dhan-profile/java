@@ -1,7 +1,12 @@
 package Practice;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
 //import java.util.Iterator;
 import java.util.TreeSet;
+
+import Demo.LinkedList;
 
 public class TreeSet1 {
 
@@ -32,6 +37,14 @@ public class TreeSet1 {
 		System.out.println("set.subSet(5, false, 25, true) : "+set.subSet(5, false, 25, true));
 		System.out.println("set.subSet(5, true, 25, true) : "+set.subSet(5, true, 25, true));
 		System.out.println("set.tailSet(25, true) : "+set.tailSet(25, true));
+		
+		ArrayList<Integer> lin = new ArrayList(set);
+		System.out.println(lin);
+//		ListIterator<Integer> li = lin.listIterator(lin.size());
+		ListIterator<Integer> li = lin.listIterator();
+		while(li.hasNext()) {
+			System.out.print(li.next()+" ");
+		}
 	}
 
 }
