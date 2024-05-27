@@ -2,6 +2,7 @@ package Practice;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.ListIterator;
 
@@ -46,6 +47,7 @@ public class ArrayList2 {
 		System.out.println("After sorting : ");
 		Collections.sort(arr3);
 		System.out.println(arr3);
+		
 		//arr3.remove(1);
 		System.out.println("arr3.remove(1) : " + arr3.remove(1));
 		System.out.println(arr3);

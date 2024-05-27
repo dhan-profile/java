@@ -46,6 +46,9 @@ public class Stack1 {
 		System.out.println("st : " + st);
 		System.out.println("st.removeAll(st1) : " + st.removeAll(st1));
 		System.out.println("st : " + st);
+		System.out.println(st.empty());
+		System.out.println("st : "+st);
+		System.out.println(st.elementAt(2));
 		
 	}
 

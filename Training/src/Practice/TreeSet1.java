@@ -1,23 +1,25 @@
 package Practice;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Iterator;
 import java.util.ListIterator;
 //import java.util.Iterator;
 import java.util.TreeSet;
-
-import Demo.LinkedList;
 
 public class TreeSet1 {
 
 	public static void main(String[] args) {
 		TreeSet<String> tree = new TreeSet<>();
-		tree.add("one");
-		tree.add("Two");
-		tree.add("Three");
-		tree.add("Four");
+		tree.add("1one");
+		tree.add("3two");
+		tree.add("2three");
+		tree.add("5four");
 		System.out.println("tree : "+ tree);
-//		Iterator itr = tree.descendingIterator();
+		Iterator<String> itr = tree.descendingIterator();
+		while(itr.hasNext()) {
+			System.out.print(itr.next()+" ");
+		}
+		
 		System.out.println(tree);
 		
 		TreeSet<Integer> set= new TreeSet<>();
@@ -28,6 +30,9 @@ public class TreeSet1 {
 		set.add(55);
 		set.add(15);
 		System.out.println("set : "+set);
+		System.out.println("set.first() : "+set.first());
+		System.out.println("set.clone() : "+set.clone());
+		System.out.println("set.ceiling(70) : "+set.ceiling(70));
 		System.out.println("set.pollFirst() : "+set.pollFirst());
 		System.out.println("set.pollLast() : "+set.pollLast());
 		System.out.println("set : "+set);
