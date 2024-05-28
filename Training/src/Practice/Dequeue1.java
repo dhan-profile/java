@@ -33,6 +33,7 @@ public class Dequeue1 {
 		System.out.println("dq.peekFirst() : "+dq.peekFirst());
 		System.out.println("dq.peekLast() : "+dq.peekLast());
 		System.out.println("dq : "+dq);
+		
 //		Collections.sort(dq);
 	}
 

@@ -36,5 +36,6 @@ public class PriorityQueue1 {
 		System.out.println("pq.element() : "+pq.element());
 		System.out.println("pq.remove() : "+pq.remove());
 		System.out.println("pq : "+pq);
+		
 	}
 }
