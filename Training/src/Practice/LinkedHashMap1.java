@@ -3,6 +3,21 @@ package Practice;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+abstract class cov{
+	int n;
+	cov(){	}
+	 static void cvl() {
+		
+	}
+}
+
+interface abs{
+	int b=0;
+	public static void mn() {
+		System.out.println("interface");
+	}
+}
+
 public class LinkedHashMap1 {
 
 	static int MAX = 4;

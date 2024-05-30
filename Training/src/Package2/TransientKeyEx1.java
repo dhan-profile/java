@@ -8,6 +8,15 @@ import java.io.Serializable;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+abstract class PersonAnonymous{
+	abstract void person();
+}
+
+class Van{
+	class Bus{
+		
+	}
+}
 public class TransientKeyEx1 implements Serializable{
 
 	private int n1 = 1;
@@ -35,6 +44,13 @@ public class TransientKeyEx1 implements Serializable{
 		} catch (ClassNotFoundException e) {
 			System.out.println(e);
 		}
+		
+		PersonAnonymous pan = new PersonAnonymous() {
+			void person() {
+				System.out.println("Anonymous inner class");
+			}
+		};
+		pan.person();
 	}
 
 }

@@ -30,8 +30,4 @@ public class SerializeExample1 {
 			System.out.println(e);
 		}
 	}
-	
-	
-	
-
 }

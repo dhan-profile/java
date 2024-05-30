@@ -3,6 +3,9 @@ package Practice;
 	interface iose {
 		abstract void call();
 		abstract void talk();
+		
+		int num = 0;
+//		num = 10;
 	}
 	interface type{
 		abstract void cat();
