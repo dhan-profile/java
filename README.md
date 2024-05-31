@@ -1,7 +1,5 @@
 # java Practice
-{google_docs}https://docs.google.com/document/d/1f5gtRUDHb__Yanq6u325WVhNtRa4S9iBpcztFmu8Sik/edit?usp=sharing{/google_docs}
 # JAVA Notes
-
 <b>Why do we use Object Oriented Programming?</b>
 <ul><li>To create an </li>
 <li>Organized, </li>
@@ -1204,6 +1202,14 @@ Everything about thread is readily defined in package called java.lang
 Keywords:
 currentThread, start, run, stop, sleep, yield, resume, suspend, setPriority, getPriority.
 
+# Collections
+![Collection](https://github.com/dhan-profile/java/assets/29054766/fc45d44a-8a17-4b98-8d03-99793f1bd157)
+
+# Map
+![Map](https://github.com/dhan-profile/java/assets/29054766/f6da543a-4a96-4234-923e-142a1f51652b)
+
+# Interview Questions
+https://drive.google.com/file/d/1FOZ_uZCpqE7o9BNYY3BWZQy-7oegewre/view?usp=sharing
 
 
 
