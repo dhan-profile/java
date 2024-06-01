@@ -50,10 +50,10 @@ class NewCar {
 	        System.out.println("Base class method called with double d ="+d);  
 	    }  
 
-	public void caller() {
+	public static void caller() {
 		final int a;
 //		final blank variable can be declared inside method
-		System.out.println("Bikeclass");
+		System.out.println("static Bikeclass");
 	}
 }
 	
@@ -61,7 +61,10 @@ class NewCar {
 	    void method(double d)  
 	    {  
 	        System.out.println("Derived class method called with double d ="+d);  
-	    }  
+	    }
+	    public static void caller() {
+	    	System.out.println("Static overide Bikeclass");
+	    }
 	}
 	
 	public class Car{
@@ -79,6 +82,12 @@ class NewCar {
 		final int s;
 //		final blank variable can be declared locally
 		new Biker().method(10.5);  
+		Biker bk = new Biker();
+		bk.caller();
+		Bike bi = new Bike();
+		bi.caller();
+		Bike bi1 = new Biker();
+		bi1.caller();
 		System.out.println("========================");
 		LinkedHashMap1 lhm = new LinkedHashMap1();
 		lhm.main(null);
