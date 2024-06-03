@@ -2,6 +2,7 @@ package Practice;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Comparator;
 
 abstract class cov{
 	int n;
@@ -62,6 +63,22 @@ public class LinkedHashMap1 {
 			System.out.println("lm.put(5, \"Volkswagen\") : "+lm.put(5, "Volkswagen"));;
 		}
 		System.out.println(lm);
+		
+//		LinkedHashMap<Integer, String> map = new LinkedHashMap<Integer, String>(new Comparator<Integer>(){
+//			public int compare(Integer n1, Integer n2) {
+//				if(n1>n2) return -1;
+//				else if(n2>n1) return 1;
+//				return 0;
+//			}
+//		});
+//		map.put(5, "five");
+//		map.put(6, "six");
+//		map.put(2, "two");
+//		map.put(3, "three");
+		
+//		Cannot use comparator in LinkedHashMap 
+//		Because LinkedHashMap by default maintains Insertion order 
+//		We can copy this map to TreeMap and use Comparator to perform sorting
 	}
 
 }

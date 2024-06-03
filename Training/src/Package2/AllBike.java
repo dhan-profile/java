@@ -40,4 +40,14 @@ class Bike {
 		obj3.show();
 		b1.show();
 	}
+	
+	abstract class Template{
+		Template(){
+			
+		}
+		abstract void sum();
+		final static void add() {
+			System.out.println("addition");
+		}
+	}
 }
