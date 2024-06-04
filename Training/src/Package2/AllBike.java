@@ -27,7 +27,7 @@ class Bike {
 		}
 	}
 	
-	public class AllBike{
+	public class AllBike {
 	public static void main(String[] args) {
 		Bike obj1 = new Bike();
 		Honda obj2 = new Honda();
@@ -39,6 +39,10 @@ class Bike {
 		obj2.show();
 		obj3.show();
 		b1.show();
+		StringBuffer sb1 = new StringBuffer("Hello");
+		StringBuffer sb2 = new StringBuffer("Hello");
+		System.out.println(sb1.toString().equals(sb2.toString()));
+		
 	}
 	
 	abstract class Template{
@@ -47,7 +51,16 @@ class Bike {
 		}
 		abstract void sum();
 		final static void add() {
-			System.out.println("addition");
+			System.out.println((((((("abstract class method")))))));
+		}
+	}
+	
+	interface Temp {
+		abstract void note();
+		void book();
+		
+		public static void call() {
+			System.out.println("interface method");
 		}
 	}
 }
