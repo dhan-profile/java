@@ -1,4 +1,5 @@
 package Package2;
+import Package2.Method1;
 
 @FunctionalInterface
 interface Add{
@@ -15,7 +16,7 @@ class Details{
 		System.out.println("RollNo: 101");
 	}
 }
-public class Method2 {
+public class MethodReference2 {
 	public static void main(String[] args) {
 //		Anonymous function using Lambda expression (for Functional Interface only)
 		Add a1 = (n1, n2) -> System.out.println(n1+n2);
@@ -34,5 +35,8 @@ public class Method2 {
 //		constructor - method reference ::
 		Add a3 = Details::new;
 		a3.sum(400, 100);
+		
+		Add a4 = Method1::nearBy;
+		a4.sum(70, 950);
 	}
 }

@@ -3,7 +3,7 @@ package Package2;
 public class Two {
 	
 	public void display1() {
-		System.out.println("display 1");
+		System.out.println("Two class Method");
 	}
 	protected void display2() {
 		System.out.println("display 2");
@@ -16,8 +16,7 @@ public class Two {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 }

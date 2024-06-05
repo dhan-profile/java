@@ -8,8 +8,8 @@ public class One extends Two{
 		One obj2 = new One();
 		obj.display1();
 		obj2.display2();
-		//obj.display3();
-		//obj.display4();
+//		obj.display3();
+//		obj.display4();
 
 	}
 
