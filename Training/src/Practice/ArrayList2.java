@@ -16,6 +16,7 @@ public class ArrayList2 {
 		arr1.add(47);
 		arr1.add(5);
 		System.out.println("arr1 : " + arr1);
+		
 		System.out.println("arr1.isEmpty() : " + arr1.isEmpty());
 		arr1.add(2, 25);
 		System.out.println(arr1);
