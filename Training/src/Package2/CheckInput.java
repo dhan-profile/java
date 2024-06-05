@@ -2,6 +2,7 @@ package Package2;
 
 import java.util.Scanner;
 
+@FunctionalInterface
 interface Checker{
 	public boolean check(String c);
 }
