@@ -1,6 +1,7 @@
 package Package2;
-
+import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 interface Inter{
 	public void custom(int n);
 }
@@ -38,6 +39,9 @@ public class Arrays2 {
 		
 		i = new Arrays2()::get;  
 		i.custom(100);
+		
+		List<Integer> list = Arrays.asList(1,2,7,3,6,4,5);
+		list.forEach(System.out::print);
 	}
 
 }
