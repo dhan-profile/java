@@ -2,34 +2,35 @@ package Package2;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class LocalTimeDayDate {
+	public static void main(String[] args) {
+// ------------------------ LocalTime - It is a Final class ----------
+// get the current local time
+		LocalTime local = LocalTime.now();
+	    System.out.println(local);
+	    System.out.println(local.getHour());
+	    System.out.println(local.getMinute());
+	    System.out.println(local.getSecond());
+	    System.out.println(local.getNano());
+	    
+//convert String into LocalTime
+	    LocalTime local1 = LocalTime.parse("08:30:20"); 
+	    System.out.println("String into Time: "+local1);
 
-	// ------------------------ LocalTime - It is a Final class ----------
-	// get the current local time
-	LocalTime local = LocalTime.now();
-//    System.out.println(local);
+// Converting LocalTime to String 
+	    LocalTime d = LocalTime.now();
+	    String dstr = d.format(DateTimeFormatter.ISO_TIME);
+	    System.out.println("Time into string :  " + dstr);
+	    
+	    boolean loc = LocalTime.parse("11:30").isBefore(LocalTime.parse("10:30"));
+	    System.out.println("isBefore: "+loc);
+	    
+	     boolean loc1 = LocalTime.parse("11:30").isAfter(LocalTime.parse("10:30"));
+	     System.out.println("isAfter: "+loc1);
+	}
 
-//    System.out.println(local.getHour());
-//    System.out.println(local.getMinute());
-//    System.out.println(local.getSecond());
-//    System.out.println(local.getNano());
-
-	/*
-	 * //convert String into LocalTime LocalTime local1 =
-	 * LocalTime.parse("08:30:20"); System.out.println("String into Time: "+local1);
-	 * 
-	 * // Converting LocalTime to String LocalTime d = LocalTime.now(); String dstr
-	 * = d.format(DateTimeFormatter.ISO_TIME);
-	 * System.out.println("Time into string :  " + dstr);
-	 */
-
-//     boolean loc = LocalTime.parse("11:30").isBefore(LocalTime.parse("10:30"));
-//     System.out.println("isBefore: "+loc);
-//     
-//     boolean loc1 = LocalTime.parse("11:30").isAfter(LocalTime.parse("10:30"));
-//     System.out.println("isAfter: "+loc1);
-//    
 //     //To provide your own time without date
 //    LocalTime local2 = LocalTime.of(8,50);
 //    System.out.println("set own time: "+local2);
