@@ -24,7 +24,7 @@ public class MethodReference2 {
 		
 //		Method Reference syntax: }===> InterfaceObject = className :: method;
 		
-//		class - static method reference ::
+//		class - static method reference ( Class_Name :: method_name)
 		Add a2 = Details :: user;
 		a2.sum(5, 10);
 		
@@ -32,10 +32,11 @@ public class MethodReference2 {
 //		When you create a method reference like Details::user, you are essentially telling the compiler 
 //		to treat the user method as an implementation of the sum method in the Add functional interface.
 
-//		constructor - method reference ::
+//		constructor - method reference ( Class_Name :: new) 
 		Add a3 = Details::new;
 		a3.sum(400, 100);
 		
+//		method reference from different package
 		Add a4 = Method1::nearBy;
 		a4.sum(70, 950);
 	}
