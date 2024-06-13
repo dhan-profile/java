@@ -36,7 +36,7 @@ public class Anonymous {
 //		Anonymous Array (An Array without name)
 		sum(new int[] {1, 2, 3, 4});
 		
-//		Anonymous class (using Interface)
+//		Anonymous class (using Interface) / Anonymous inner class
 		Template t = new Template() {
 			public void show() {
 				System.out.println("Anonymous class using interface");
@@ -45,7 +45,11 @@ public class Anonymous {
 		t.show();
 		
 //		Anonymous class (using abstract class)
-		Template2 t2 = new Template2(){};
+		Template2 t2 = new Template2(){
+//			public void show() {
+//				System.out.println("Anonymous class using abstract");
+//			}
+		};
 		t2.show();
 	}
 }

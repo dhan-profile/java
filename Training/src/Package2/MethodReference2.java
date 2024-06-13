@@ -1,5 +1,5 @@
 package Package2;
-import Package2.Method1;
+import Package2.Default_and_Static_Methods;
 
 @FunctionalInterface
 interface Add{
@@ -14,6 +14,11 @@ class Details{
 	static void user(int n1, int n2) {
 		System.out.println("Name: dhanush");
 		System.out.println("RollNo: 101");
+	}
+}
+class Exampler{
+	void anotherUser(int num1, int num2) {
+		System.out.println("Instance method reference..");
 	}
 }
 public class MethodReference2 {
@@ -36,8 +41,12 @@ public class MethodReference2 {
 		Add a3 = Details::new;
 		a3.sum(400, 100);
 		
+//		Instance - method reference ( Object :: method_name) 
+		Add a5 = new Exampler()::anotherUser;
+		a5.sum(200, 300);
+		
 //		method reference from different package
-		Add a4 = Method1::nearBy;
+		Add a4 = Default_and_Static_Methods::nearBy;
 		a4.sum(70, 950);
 	}
 }
