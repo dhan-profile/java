@@ -20,7 +20,7 @@ class StreamPractice{
 //		=============================
 //		even numbers in array to list
 //		=============================
-		Integer[] arr = {23, 54, 87, 65, 12, 97};
+		Integer[] arr = {23, 54, 87, 65, 12, 97, 8, 6};
 		List<Integer> list = Arrays.stream(arr).filter(v -> v%2==0).collect(Collectors.toList());
 		System.out.print(list+"\n");
 		
@@ -56,5 +56,38 @@ class StreamPractice{
 					"Mason", "Harper", "Ethan", "Evelyn", "Daniel", "Abigail"};
 		List<String> namesStartingA = Arrays.asList(names);
 		namesStartingA.stream().filter(s -> s.startsWith("A")).forEach(v -> System.out.print(v+" "));
+		System.out.println();
+		
+//		==================================
+//		first name starting with letter 'A'
+//		==================================		
+		Optional<String> firstA = namesStartingA.stream().filter(n -> n.startsWith("A")).findFirst();
+		System.out.println(firstA);
+		
+//		==================================
+//		sort the list in ascending order
+//		==================================		
+		Arrays.asList(arr).stream().sorted().forEach(v-> System.out.print(v+" "));
+		System.out.println();
+
+//		============================
+//		count values greater than 10
+//		============================
+		Long val = Arrays.asList(arr).stream().filter(v -> (v>10)).count();
+		System.out.println("No of values greater than 10: "+val);
+		
+		System.out.print("Length-3: ");
+		Arrays.asList(names).stream().filter(n -> (n.length()==3)).forEach(v -> System.out.print(v+" "));
+		
+        List<String> names2 = Arrays.asList("James", "Olivia", "Michael", "Emma", "William", "Ava", 
+                							"Benjamin", "Sophia", "Lucas", "Isabella", "Henry", 
+                							"Mia", "Alexander", "Amelia", "Mason", "Harper", 
+                							"Ethan", "Evelyn", "Daniel", "Abigail");
+        Map<Integer, List<String>> groupedByLength = names2.stream().collect(Collectors.groupingBy(String::length));
+
+// 		Print the grouped names
+        groupedByLength.forEach((length, group) -> {
+        	System.out.println("Length " + length + ": " + group);
+        });
 	}
 }
