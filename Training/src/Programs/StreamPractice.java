@@ -34,12 +34,18 @@ class StreamPractice{
 //		=====================================
 //		find max value in array of Integer type
 //		=====================================	
-		Optional<Integer> max = Arrays.stream(arr).max(Comparator.naturalOrder());
-		System.out.println(max);
+		Optional<Integer> maximum = Arrays.stream(arr).max(Comparator.naturalOrder());
+		System.out.println("Max value: "+maximum);
 		
-		int sup[] = {3, 5, 2, 1, 6}; 
-		OptionalInt max2 = Arrays.stream(sup).max();
-		System.out.println(max2);
+//		int sup[] = {3, 5, 2, 1, 6}; 
+//		OptionalInt max2 = Arrays.stream(sup).max();
+//		System.out.println(max2);
+
+//		=====================================
+//		find min value in array of Integer type
+//		=====================================		
+		Optional<Integer> minimum = Arrays.stream(arr).min(Comparator.naturalOrder());
+		System.out.println("Min value: "+minimum);
 
 //		==================================
 //		convert string array to upper case
@@ -79,15 +85,19 @@ class StreamPractice{
 		System.out.print("Length-3: ");
 		Arrays.asList(names).stream().filter(n -> (n.length()==3)).forEach(v -> System.out.print(v+" "));
 		
+//		=======================
+// 		Print the grouped names
+//		=======================
         List<String> names2 = Arrays.asList("James", "Olivia", "Michael", "Emma", "William", "Ava", 
                 							"Benjamin", "Sophia", "Lucas", "Isabella", "Henry", 
                 							"Mia", "Alexander", "Amelia", "Mason", "Harper", 
                 							"Ethan", "Evelyn", "Daniel", "Abigail");
         Map<Integer, List<String>> groupedByLength = names2.stream().collect(Collectors.groupingBy(String::length));
 
-// 		Print the grouped names
         groupedByLength.forEach((length, group) -> {
         	System.out.println("Length " + length + ": " + group);
         });
+        
+        
 	}
 }
