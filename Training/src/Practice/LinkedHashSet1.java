@@ -15,7 +15,7 @@ public class LinkedHashSet1 {
 		System.out.println("set : "+set);
 		System.out.println("set.remove(\"Four\") : "+set.remove("Four"));
 		System.out.println("set : "+set);
-		System.out.println("set.getFirst() : "+set.getFirst());
+//		System.out.println("set.getFirst() : "+set.getFirst());
 	}
 
 }

@@ -15,7 +15,7 @@ class DescendingComparator implements Comparator<Integer> {
 	}
 }
 
-public class TreeMap2 {
+public class TreeMap2_Comparator {
 	public static void main(String[] args) {
 
 //    	METHOD-1: Creating object and passing object to comparator 👇

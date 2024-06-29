@@ -20,8 +20,8 @@ public class Vector1 {
 		Vector<Object> vec1 = new Vector<>();
 		vec1.add(20);
 		vec1.addElement(22);
-		vec1.addFirst(34);
-		vec1.addLast(13);
+//		vec1.addFirst(34);
+//		vec1.addLast(13);
 		System.out.println("vec1 : " + vec1);
 		System.out.println("vec1.remove(0) : " + vec1.remove(0));
 		System.out.println("vec1 : " + vec1);
