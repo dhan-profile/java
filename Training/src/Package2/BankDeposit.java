@@ -6,6 +6,9 @@ public class BankDeposit extends Thread{
 	private long accountNo;
 	private long balance;
 	
+	BankDeposit(){
+	}
+	
 	public BankDeposit(long accountNo, long balance) {
 		super();
 		this.accountNo = accountNo;

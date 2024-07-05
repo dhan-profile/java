@@ -59,7 +59,9 @@ public class BankEncaps {
         System.out.println("ACCOUNT BALANCE: "+acc.getAmount()); 
 
         acc.setWithdraw(3000f);
-        System.out.println("ACCOUNT BALANCE: "+acc.getAmount()); 
+        System.out.println("ACCOUNT BALANCE: "+acc.getAmount());
+        System.out.println(a);
     } 
+    static int a = 1999;
     
 }
