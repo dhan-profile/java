@@ -16,14 +16,11 @@ class MyThread extends Thread {
     public void run() {
         System.out.println("in run " + getName());
     }
-	
-	    public static void main(String[] args) {
-        new MyThread("oops");
-    }
+
 }
 
 public class ThreadTest {
-//    public static void main(String[] args) {
-//        new MyThread("oops");
-//    }
+    public static void main(String[] args) {
+        new MyThread("oops");
+    }
 }

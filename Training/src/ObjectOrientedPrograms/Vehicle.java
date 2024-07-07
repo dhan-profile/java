@@ -1,4 +1,4 @@
-package interfacesDemo;
+package ObjectOrientedPrograms;
 
 public interface Vehicle {
 	public int mileage();

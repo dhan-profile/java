@@ -1,4 +1,4 @@
-package interfacesDemo;
+package ObjectOrientedPrograms;
 
 class Vehicle1 {
     void move() {

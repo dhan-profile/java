@@ -1,4 +1,4 @@
-package interfacesDemo;
+package ObjectOrientedPrograms;
 
 public abstract class Cars implements Vehicle{
 	Vehicle v1 = new Vehicle() {

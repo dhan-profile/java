@@ -1,4 +1,4 @@
-package interfacesDemo;
+package ObjectOrientedPrograms;
 
 interface I { int x = 0; }
 class T1 implements I { int x = 1; }

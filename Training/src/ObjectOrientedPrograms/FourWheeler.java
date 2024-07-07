@@ -1,4 +1,4 @@
-package interfacesDemo;
+package ObjectOrientedPrograms;
 
 import java.util.function.Supplier;
 
@@ -29,7 +29,8 @@ class ThreeWheeler extends FourWheeler{
 }
 
 abstract class Bike{
-	
+	static int num1 = 0;
+	final int num2 = 0;
 }
 
 interface DamagedVehicles extends Vehicle{
