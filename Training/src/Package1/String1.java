@@ -11,6 +11,10 @@ public class String1 {
 		System.out.println(s1.indexOf("o"));
 		System.out.println(s1.lastIndexOf("o"));
 		System.out.println(s1.contains("day"));
+		Integer num1 = 123;
+		String s2 = num1.toString();
+		System.out.println(s2);
+		System.out.println(s2.hashCode());
 	}
 
 }

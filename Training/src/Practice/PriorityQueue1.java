@@ -29,6 +29,7 @@ public class PriorityQueue1 {
 //		================================	
 //		Output: 5, 8, 12, 32, 24
 //		================================
+//		offer(), remove(), peek(), poll(), element() 
 		System.out.println("pq.offer(50) : "+pq.offer(50));	// Inserted at End 
 		System.out.println("pq.poll() : " + pq.poll());	// Removed at Beginning
 		System.out.println("pq : " + pq);
@@ -36,6 +37,5 @@ public class PriorityQueue1 {
 		System.out.println("pq.element() : "+pq.element());
 		System.out.println("pq.remove() : "+pq.remove());
 		System.out.println("pq : "+pq);
-		
 	}
 }
