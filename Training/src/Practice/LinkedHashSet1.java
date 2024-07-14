@@ -1,6 +1,10 @@
 package Practice;
 
+//import java.util.ArrayList;
+//import java.util.Collections;
+//import java.util.Comparator;
 import java.util.LinkedHashSet;
+//import java.util.List;
 
 public class LinkedHashSet1 {
 
@@ -16,6 +20,8 @@ public class LinkedHashSet1 {
 		System.out.println("set.remove(\"Four\") : "+set.remove("Four"));
 		System.out.println("set : "+set);
 //		System.out.println("set.getFirst() : "+set.getFirst());
+//		List<String> list = new ArrayList<>(set);
+//		Collections.sort(set, Comparator.nullsFirst(Comparator.naturalOrder()));
 	}
 
 }

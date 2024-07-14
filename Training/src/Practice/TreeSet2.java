@@ -9,6 +9,29 @@ class DescendingComparator2 implements Comparator<Integer>{
 		return 0;
 	}
 }
+
+class MyNumber implements Comparable<MyNumber> {
+    private Integer value;
+
+    public MyNumber(Integer value) {
+        this.value = value;
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+
+    @Override
+    public int compareTo(MyNumber other) {
+        // For descending order
+        return other.value.compareTo(this.value);
+    }
+
+    @Override
+    public String toString() {
+        return value.toString();
+    }
+}
 public class TreeSet2 {
 
 	public static void main(String[] args) {
@@ -27,6 +50,15 @@ public class TreeSet2 {
 		num.add(56);
 		num.add(12);
 		num.add(8);
+		System.out.println("Using Comparator:");
 		System.out.println(num);
+        TreeSet<MyNumber> numSet = new TreeSet<>();
+        numSet.add(new MyNumber(24));
+        numSet.add(new MyNumber(32));
+        numSet.add(new MyNumber(56));
+        numSet.add(new MyNumber(12));
+        numSet.add(new MyNumber(8));
+        System.out.println("Using Comparable:");
+        System.out.println(numSet);
 	}
 }

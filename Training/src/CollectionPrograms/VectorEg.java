@@ -1,7 +1,7 @@
 package CollectionPrograms;
 
 import java.util.Enumeration;
-import java.util.Iterator;
+//import java.util.Iterator;
 import java.util.Vector;
 
 public class VectorEg {
@@ -11,7 +11,7 @@ public class VectorEg {
 		vec.add(40);
 		vec.add(50);
 		vec.add(10);
-		vec.add(30);
+		vec.addElement(30);
 		vec.forEach(System.out::println);
 		
 //		ENUMERATION => elements(), hasMoreElements(), nextElement()

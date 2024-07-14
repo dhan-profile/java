@@ -48,5 +48,17 @@ public class LinkedListEg {
         for (Employee e : employeeList) {
             System.out.println(e.getEmpno() + " " + e.getName() + " " + e.getLocation() + " " + e.getSalary());
         }
+
+                LinkedList<Integer> list = new LinkedList<>();
+                list.push(33);
+                list.push(61);
+                list.offer(55);
+                list.push(72);
+                list.push(23);
+				System.out.println(list.get(0));
+				System.out.println(list.get(2));
+				for (Integer i : list) {
+					System.out.print(i+" ");
+				}
     }
 }

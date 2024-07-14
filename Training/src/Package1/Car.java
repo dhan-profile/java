@@ -3,13 +3,20 @@ package Package1;
 import Practice.LinkedHashMap1;
 
 class NewCar {
-
 	private String company_name;
 	private String model_name;
 	private int year;
 	private int mileage = 35;
-	
+	static int m=0;
+	int m2 = 1;
+	NewCar(){
+		System.out.println();
+	}
+	static {
+		System.out.println();
+	}
 	public String getName() {
+		System.out.println(m);
 		return company_name;
 	}
 	public String getModel() {
@@ -35,7 +42,6 @@ class NewCar {
 	class Bike{
 //		final int b;
 //		final blank variable cannot be declared outside 
-		
 		Bike(){
 			final int b;
 			// final blank variable can be declared inside constructor 
@@ -91,5 +97,6 @@ class NewCar {
 		System.out.println("========================");
 		LinkedHashMap1 lhm = new LinkedHashMap1();
 		lhm.main(null);
+		System.out.println(car.m2);
 	}
 }

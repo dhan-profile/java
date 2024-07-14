@@ -1,6 +1,7 @@
 package Practice;
 
 import java.util.ArrayList;
+//import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -14,7 +15,7 @@ public class HashSet1 {
 		set.add("Four");
 		set.add(null);
 		set.add("Eight");
-		
+
 		Iterator<String> itr = set.iterator();
 		while(itr.hasNext()) {
 			System.out.print(itr.next() + " ");

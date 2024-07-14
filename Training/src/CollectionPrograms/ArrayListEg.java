@@ -31,6 +31,7 @@ public class ArrayListEg {
 		ArrayList<Employee> arr = new ArrayList<>();
 		arr.add(E);
 		arr.add(E2);
+		arr.remove(0);
 //		for (Employee e : arr) {
 //			System.out.println(e.getEmpno()+" "+e.getName()+" "+e.getLocation()+" "+e.getSalary());
 //		}
@@ -44,5 +45,4 @@ public class ArrayListEg {
 		}
 		Collections.sort(null);
 	}
-
 }

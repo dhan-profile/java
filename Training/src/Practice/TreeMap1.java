@@ -14,6 +14,8 @@ public class TreeMap1 {
 		System.out.println("tm.ceilingEntry(3) : "+tm.ceilingEntry(3));
 		System.out.println("tm.ceilingKey(2) : "+tm.ceilingKey(2));
 		System.out.println("tm.containsKey(31) : "+tm.containsKey(31));
+		tm.pollFirstEntry();
+		System.out.println(tm);
 		
 	}
 

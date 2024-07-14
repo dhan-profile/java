@@ -1,7 +1,7 @@
 package Practice;
 import java.util.ArrayDeque;
-import java.util.Collections;
-import java.util.Comparator;
+//import java.util.Collections;
+//import java.util.Comparator;
 
 public class Dequeue1 {
 
@@ -11,7 +11,7 @@ public class Dequeue1 {
 		// We use ArrayDequeue because we cannot create object for Dequeue
 		// because Dequeue is an interface, ArrayDeque implements Dequeue interface
 		// Queue(Interface) --extends--> Dequeue(Interface) --implements--> ArrayDeque(Class)
-		// ArrayDeque is not suitable for sorting
+		// ArrayDeque is not suitable for sorting because to maintain FIFO order
 		
 		dq.offer(50);
 		dq.offer(40);
