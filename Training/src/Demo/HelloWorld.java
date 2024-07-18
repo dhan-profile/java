@@ -5,6 +5,7 @@ import java.util.Optional;
 public class HelloWorld {
 	HelloWorld(){
 		System.out.println("Created object using newInstance()");
+		System.out.println(getClass());
 	}
 	public static void main(String[] args) {
 //		Number num1 = 10, num2 = 20;

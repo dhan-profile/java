@@ -16,5 +16,4 @@ public class String1 {
 		System.out.println(s2);
 		System.out.println(s2.hashCode());
 	}
-
 }

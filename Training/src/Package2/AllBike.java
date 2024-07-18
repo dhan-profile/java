@@ -1,12 +1,39 @@
 package Package2;
 
+//=====================
+//PRACTICE - Declaration check
+//==================
+interface Addition{
+	abstract void comp();
+}
+class Foo {
+	Addition h2 = new Addition() {
+		public void comp() {
+			System.out.println("Comparision");
+		}
+	};
+}
+abstract class Foo1{
+	protected abstract void comp2();
+	@SuppressWarnings("unused")
+	private void cmop2() {
+		
+	}
+}
+//=======================
 class Bike {
 
+	Bike(){
+		System.out.println("construct");
+	}
 	private String company = "Honda";
 	private String type = "Two Wheeler";
 	public void show() {
 		System.out.println("Company: " + company);
 		System.out.println("Type: " + type);
+	}
+	public static void five() {
+		
 	}
 }
 	class Honda extends Bike{
@@ -15,6 +42,9 @@ class Bike {
 		public void show() {
 			System.out.println("Name: " + name);
 			System.out.println("Mileage: " + mileage);
+		}
+		public static void five() {
+			
 		}
 	}
 	
