@@ -12,10 +12,13 @@ public class ArrayList2 {
 		ArrayList<Integer> arr1 = new ArrayList<>(); 
 		arr1.add(32);
 		arr1.add(12);
+		arr1.add(null);
 		arr1.add(64);
 		arr1.add(47);
+		arr1.add(null);
 		arr1.add(5);
 		System.out.println("arr1 : " + arr1);
+		System.exit(0);
 		
 		System.out.println("arr1.isEmpty() : " + arr1.isEmpty());
 		arr1.add(2, 25);
@@ -65,6 +68,7 @@ public class ArrayList2 {
 			System.out.println(litr.next() + " " + litr.nextIndex());
 			if(litr.nextIndex() == 5) {
 				litr.set(6);
+				litr.add(5);
 			}
 		}
 		System.out.println(arr1);
