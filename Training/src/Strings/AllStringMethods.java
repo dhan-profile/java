@@ -31,7 +31,8 @@ public class AllStringMethods {
 		System.out.println(s2.toLowerCase()); System.out.println(s3.toUpperCase());
 		System.out.println(s.substring(4)); System.out.println(s.substring(4, 15));
 		System.out.println(String.valueOf(n)); System.out.println(n+"");
-		
+		System.out.println(s.replace("e", "xyz"));
+		System.out.println(s.replaceAll("[aeoiu]", "x"));
 	}
 
 }
