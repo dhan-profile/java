@@ -1,6 +1,7 @@
 package Practice;
 
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class HashMap1 {
 
@@ -27,7 +28,6 @@ public class HashMap1 {
 		
 //		get(key, defaultValue) --> get the "Value" of key given, if not defaultValue will be get 
 		System.out.println("map.getOrDefault('f', 20) : "+map.getOrDefault('f', 20));
-		
 		
 	}
 }
